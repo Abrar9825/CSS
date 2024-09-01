@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* --box-color:pink; ye normal ek  oca varible he jo sirf vo ek he class may use hoga ager dusre class may use karna he to vhi chiz vaps vo class may likh ne padegi or ye ese he design hota he or muje kahi bhi isko use karna hua to var() ke sath use karna hoga  */
+
+       /* :root jo he global word he jo pure css may work karga ismay ager koi hi var define kiya to pure css may work karega  */
+        :root
+        {
+            --primary-background-color:pink;
+            --box-color:rgb(173, 139, 195);
+            --maxw:333px;
+            --bg:rgba(130, 161, 212, 0.659);
+
+        }
+        .box
+        {
+            /* --primary-background-color:pink;
+            --box-color:rgb(173, 139, 195); */
+            height: 200px;
+            width: 200px;
+            background-color: var(--primary-background-color);
+            border: 2px solid black;
+            margin: 2px 10px;
+            box-shadow: 13px 13px 3px var(--box-color);
+        }
+        .con
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color:var(--bg);
+            width: var(--maxw);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

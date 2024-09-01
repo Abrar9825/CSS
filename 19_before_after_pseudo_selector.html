@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+         }
+         header::before
+         {
+            background: url('img/bg.png')
+            no-repeat center center/cover ;
+             content: "";
+             position: absolute;
+             width: 50%;
+             height: 90%;
+             top: 0px;
+             z-index: -1;
+             opacity: 0.5;
+         }
+
+        section {
+            height: 344px;
+            justify-content: center;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        /* section ke pele likh dega */
+        /* section::before
+        {
+            content: "section se pele insert hoga";
+        } */
+        .navi {
+            display: flex;
+            font-size: 20px;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navi">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Contact</li>
+                <li class="item">Serives</li>
+
+            </ul>
+        </nav>
+    </header>   
+        <section>
+            <h1>Welcome to abrar world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus inventore sint vitae facilis. Nesciunt
+                expedita dolores unde iusto quis architecto, dolorem voluptatibus autem eligendi esse quod ratione quo
+                nihil enim quasi! Illum, voluptate iste.</p>
+        </section>
+        <hr>
+</body>
+
+</html>

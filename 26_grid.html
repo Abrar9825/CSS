@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con
+        {
+            display: grid;
+            /* grid-template-columns: 100px 200px 300px; */
+            grid-template-columns: 100px auto 300px;
+            /* grid-template-columns: 1fr 4fr; */
+
+            /* Repert May Fisrt May kitne Baar Repert Karna he or Second May Uske Width Kitne rakh ne he  */
+            grid-template-columns: repeat(5,200px);
+            grid-gap: 20px;
+
+        }
+        .item
+        {
+           /* height: 200px;
+            width: 200px; */
+            padding: 10px 5px;
+            border: 2px solid black;
+            margin: 2px;
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con {
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        /* pseudo selector */
+        input[type='text'] {
+            background-color: yellow;
+        }
+
+        a[target] {
+            font-size: 63px;
+            color: red;
+        }
+
+        a[target="_self"] {
+            font-size: 63px;
+            color: green;
+        }
+
+        /* yaha par (value) konse number pe css karvana he */
+        /* li:nth-child(8)
+        {
+            color: red;
+        } */
+
+        /*ye n vala jo he jo first Element ke baad plus karke likha he jo pele vo vale value pe jayega or 
+        or uske baad vp jo aage 3n likha he phir 3 elemnet par jaker vo chnage kar dega   */
+        /* li:nth-child(3n+4)
+        {
+            color:cyan;
+        }*/
+        /* use hota he odd ke liye ek samkhya ke liye  */
+        li:nth-child(odd) {
+            background-color: rgb(149, 149, 69);
+        }
+
+        /* use hota he even ke liye bake sankhaya  */
+        li:nth-child(even) {
+            background-color: rgb(100, 209, 202);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <!-- _black jo he link ko new page par open karga ager target nhi hoga to vo css acess nhi karega  -->
+        <h1><a href="http://google.com" target="_blank">go to google</a></h1>
+        <h1><a href="http://facbook.com" target="_self">go to facbook</a></h1>
+
+        <form class="form">
+            <input type="text" placeholder="Name ">
+            <input type="password" placeholder="Passowrd">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item6">item6</li>
+            <li class="item" id="item7">item7</li>
+            <li class="item" id="item8">item8</li>
+            <li class="item" id="item9">item9</li>
+            <li class="item" id="item10">item10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

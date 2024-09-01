@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div > p ye > sign ye batata he ke div ke child ko acess karo or uspe work karo ab vo kitne bhi div ho or uske ander kitne bhi child ho vo sab lega sirf jo dyrek div ke ander he  
+        {
+            color: aqua;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: green;
+        } */
+        /* ul + p ye + sign jo he vo yeke div ke baad turat he ager p tag ata he to use acess karo or ye chiz run karoor ager bich may kuch bhi ajjye to mat lena */
+        div + p {
+            color: white;
+            background-color: rgb(220, 174, 174);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Advance Selector  -->
+    
+    <div class="cont">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>in a li p</p>
+                </li>
+            </ul>
+            <p>This is para </p>
+        </div>
+        <!-- <h4>may div ke baad hu  </h4> -->
+        <p>onther para</p>
+    </div>
+    <p>outer para</p>
+
+</body>
+
+</html>

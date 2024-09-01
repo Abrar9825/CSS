@@ -1,0 +1,33 @@
+#navbar::before {
+     content: "";/*or ye  */
+    background-color: black;
+     position: absolute;/* ye samj na he */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* list style */
+#navbar
+{
+    position: relative;
+}
+
+#navbar ul li a {
+     display: block;/*Why we block a display */
+    padding: 3px 22px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Google font P30:13 */
+/* h-primary center 37*/
+/* h-secondery center 40*/
+
+
+*{
+    /* position: absolute;Fund */
+}
+/* 58:00 se sab gadbad ho gya */

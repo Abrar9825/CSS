@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cont {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+        /* Har row or column ke size same hone chaiye compulsery  */
+        'nav nav nav nav'
+        "section section section  aside"
+        "footer footer footer footer" ;
+    }
+
+    .item {
+        background-color: yellow;
+        border: 2px solid black;
+    }
+    #nav
+    {
+        grid-area: nav;
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    }
+   footer
+    {
+        grid-area: footer;
+    }
+</style>
+
+<body>
+    <div class="cont">
+        <div id="nav" class="item">
+            Home about us Services
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, modi. Nihil inventore, accusamus eligendi necessitatibus earum dolores dolorem beatae! Quos debitis ad inventore! Non deleniti veniam sapiente laudantium eos fuga ex voluptates neque. Cum, maxime? Maxime quaerat praesentium aperiam voluptate ipsum, vel dolorum nesciunt? Totam aliquam maiores aliquid voluptates tempore ut voluptatibus cum officia iure vitae illo quam ea sit, amet recusandae assumenda est, neque voluptatem aperiam nesciunt, cumque nisi ipsa natus. Odio architecto repellendus necessitatibus quam adipisci rem reiciendis libero natus quae quas quibusdam amet, inventore quis nisi nulla atque beatae aliquid modi maxime impedit tempore eaque incidunt. Illo.</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus eos necessitatibus architecto ratione nostrum alias velit aperiam, itaque id maiores ab sapiente exercitationem repellat quidem laudantium accusantium facilis beatae in dolores explicabo et quasi. Est aliquid eius ipsa assumenda sint natus saepe iusto unde suscipit eaque ad commodi ex necessitatibus temporibus, hic repudiandae tempora accusantium. Quos enim culpa a quo deleniti perferendis, iure cumque explicabo rerum voluptatem. Odio, quia molestias! Officiis error dolores quas esse voluptate. Quo a excepturi laudantium, perspiciatis modi, reiciendis molestias ab amet maiores officia iure cumque, enim officiis totam deserunt suscipit magnam beatae repellat unde!</div>
+
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div> -->
+    </div>
+    <footer class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad sequi perferendis tempora?</footer>
+</body>
+
+</html>

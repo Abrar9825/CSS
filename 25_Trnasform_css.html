@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+    .cont
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: yellow;
+        height: 500px;
+    }
+    .box
+    {
+        background-color: brown;
+        border: 2px solid black;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 300px;
+        font-size: 50px;
+        transition: 8s;
+    }
+    .box:hover{
+        transform: rotate(360deg);
+        background-color: rgb(178, 237, 178);
+
+        /* corss kar dega  */
+        /* transform: skew(100deg); */
+
+        /* bada kar dega  */
+        /* transform: scale(2); */
+
+        /* transform: translateX(123px);
+        transform: translateY(123px); */
+        /* X or Y sath May  */
+        /* transform: translate(123px ,123px); */
+
+
+    }
+</style>
+<body>
+       <div class="cont">
+           <div class="box">
+               This is Box
+           </div>
+       </div> 
+</body>
+</html>

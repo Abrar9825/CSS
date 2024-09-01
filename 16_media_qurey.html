@@ -1,0 +1,63 @@
+
+<!-- media qurey :- mtlb ager screen and width or height itne ho jaye to aapke css may ye add kardo ye kardo esa as like js function -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible " content="ie=edge">
+</head>
+
+<style type="text/css">
+	.box
+	{
+		background-color: red;
+		border: 2px solid black;
+		margin: 20px;
+		display: none;
+	}
+	@media only screen and (max-width: 299px){
+		#box1
+		{
+			display: block;
+			background-color: green;
+		}
+	}
+	@media only screen and (max-width:500px) and (min-width:300px) 
+	{
+		#box2
+		{
+			background-color: blue;
+			/* color: blue; */
+			display: block;
+		}
+	}
+	@media only screen and (min-width:501px) and (max-width:800px) 
+	{
+		#box3
+		{
+			display: block;
+			background-color: gray;
+
+		}	
+	}
+	
+	@media only screen and (min-width:800px) 
+	{
+		#box4
+		{
+			display: block;
+			background-color:violet;
+
+		}	
+	}
+</style>
+<body>
+	<div class="box" id="box1">One</div>
+	<div class="box" id="box2">two</div>
+	<div class="box" id="box3">three</div>
+	<div class="box" id="box4">four</div>
+
+</body>	
+</html>

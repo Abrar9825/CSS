@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cont
+    {
+    background-color:yellow;   
+    }
+    .box
+    {
+        background-color:green;
+        width: 250px;
+        height: 250px;
+        position: relative;
+
+        /* sign a name of animation; */
+        /* animation-name:abrar ; */
+        
+        animation-name:abrar1 ;
+        
+        animation-duration: 8s;
+        /* kitne baar chala na he  */
+        animation-iteration-count: 10;
+        
+        /* animation-fill-mode: alternate; */
+        /* animation-fill-mode: forwards; */
+
+        /* start may slow phir end may fast */
+        /* animation-timing-function: ease-in; */
+
+        /* start may fast phir end may slow */
+         /* animation-timing-function: ease-out; */
+
+        /* start may slow or bich may fast  phir end may slow */
+         animation-timing-function: ease-in;
+
+         /* animation-delay: 3s; */
+         animation-direction: reverse;
+
+        /* this prpery is a short hand for a animation */
+         /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+         /* animation: abrar1 3s ease-in-out 1s 12 alternate-reverse backwards;               */
+    }
+    /* @keyframes abrar
+    {
+        from
+        {
+        width: 200px;    
+        }
+        to
+        {
+        width: 1400px;    
+
+        }
+    } */
+
+    @keyframes abrar1 
+    {
+        0%
+        {   
+            top:0px;
+            left:0px;
+            background-color: red;
+        }   
+        25%
+        {
+            top:0px;
+            left:250px;
+            background-color: green;
+            
+
+        }
+        75%
+        {
+            
+            top:250px;
+            left:250px;
+            background-color: pink;
+
+        }
+        100%
+        {
+            
+            top:250px;
+            left:0px;
+            background-color: yellow;
+
+        }
+
+    }
+</style>
+<body>
+    <div class="cont">
+        <div class="box">This is Box</div>
+    </div>
+</body>
+</html>
